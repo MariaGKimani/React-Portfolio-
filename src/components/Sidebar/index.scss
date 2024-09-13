@@ -25,7 +25,7 @@ min-height: 500px;
     text-align: center;
     position: absolute;
     height: 210px;
-    top: 50%;
+    top: 40%;
     margin-top: -120px;
     width: 100%;
 
@@ -76,23 +76,31 @@ min-height: 500px;
             position: absolute;
             left: 50%;
             top: 50%;
-            transform: translate(-50%, -50%); // Center text
+            transform: translate(-50%, -50%);
             white-space: nowrap;
             display: block;
             font-size: 16px;
         }
     }
-    // a.active {
-    //     svg {
-    //         color: #03314e96;
-    //     }
-    // }
+    a.project-link {
+        &:hover::after {
+            content: 'PROJECTS';
+            color: #0d95b4;       
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%); 
+            white-space: nowrap;
+            display: block;
+            font-size: 16px;
+        }
+    }
 
     }
 
     ul{
         position: absolute;
-        bottom: 20px;
+        bottom: 10px;
         width: 100%;
         display: block;
         padding: 0;
@@ -102,7 +110,7 @@ min-height: 500px;
     }
     li{
         a{
-            padding: 7px 0;
+            padding: 5px 0;
             display: block;
             font-size: 22px;
             line-height: 16px; 
