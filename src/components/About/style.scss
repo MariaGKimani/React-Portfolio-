@@ -1,0 +1,127 @@
+/* AboutPage.css */
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .skills-section {
+    margin-bottom: 20px;
+  }
+  
+  .skills-container {
+    display: grid;
+    gap: 20px; /* Adjust gap as needed */
+    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+  }
+  
+  .skill-item {
+    text-align: center;
+    width: 100px; /* Adjust width as needed */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  .skill-icon {
+    font-size: 2rem;
+    color: #2196F3;
+  }
+  
+
+  .education-experience-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .education, .experience {
+    flex: 1;
+    padding: 20px;
+    background: rgba(33, 150, 243, 0.05);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+
+  }
+
+  .section-icon {
+    font-size: 3rem;
+    color: #2196F3;
+    margin-bottom: 10px;
+  }
+  
+  .education-item, .experience-item {
+    margin-bottom: 20px;
+  }
+  
+  .education-title, .experience-title {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .education-details, .experience-details {
+    margin: 5px 0;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    margin: 5px 0;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .about-container {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  @keyframes titleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+}
+
+.about-title {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  animation: titleAnimation 2s infinite;
+}
