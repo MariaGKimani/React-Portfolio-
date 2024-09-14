@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';  // Import Outlet from react-router-dom
 import Sidebar from '../Sidebar';
 import './index.scss';
+import Footer from '../Footer';
 
 const Layout = () => {
     return (
@@ -10,8 +11,11 @@ const Layout = () => {
             <div className='page'>
                 <Outlet /> 
             </div>
+            <Footer /> 
         </div>
     );
 }
+
+
 
 export default Layout;

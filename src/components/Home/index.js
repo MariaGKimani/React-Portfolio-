@@ -1,6 +1,6 @@
 import './index.scss';
 import Logo from '../../assets/images/logo3.png'
-import { Link } from 'react-router-dom';
+import CurriculumVitae from '../../assets/documents/Mariagoretti-CV .pdf'
 
 const Home =() =>{
     return(
@@ -15,8 +15,10 @@ const Home =() =>{
                 I'm Mariagoretti</h1>
                 <p>Welcome to my portfolio! I am a passionate software developer <br/>
                     specializing in building amazing web applications.</p>
-                    <h4>Get in touch &#x2193;</h4>
-                    <Link to="/contact" className='flat-button' > CONTACT ME </Link>
+                    <h4>Discover More ! &#x2193;</h4>
+                    <a href={CurriculumVitae} className="flat-button" download>
+                    Download CV
+                </a>
               
             </div>
 

@@ -1,0 +1,104 @@
+.projects-page {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.15), rgba(0, 140, 191, 0.1));
+    min-height: 100vh;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  
+    .projects-title {
+      font-size: 3rem;
+      color: #fff;
+      margin-bottom: 40px;
+      position: relative;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 5px;
+      font-family: 'Lobster', cursive;
+      
+      &:before {
+        content: "Projects";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 7rem;
+        color: rgba(255, 255, 255, 0.05);
+        z-index: -1;
+        white-space: nowrap;
+      }
+    }
+  
+    .projects-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+      max-width: 350px;
+      text-align: center;
+      color: #fff;
+  
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+      }
+  
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+  
+      .technologies {
+        margin-bottom: 15px;
+  
+        .tech {
+          display: inline-block;
+          background-color: rgba(33, 150, 243, 0.8);
+          color: #fff;
+          padding: 5px 10px;
+          margin: 0 5px;
+          border-radius: 5px;
+          font-size: 0.9rem;
+          transition: background-color 0.3s;
+          &:hover {
+            background-color: rgba(0, 140, 191, 0.8);
+          }
+        }
+      }
+  
+      .project-links {
+        margin-top: 20px;
+        
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1.1rem;
+          margin: 0 10px;
+          transition: color 0.3s;
+          &:hover {
+            color: #2196F3;
+          }
+          .project-icon {
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  

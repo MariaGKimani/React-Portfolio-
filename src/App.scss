@@ -12,10 +12,11 @@ $primary-color : #071C34;
   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Coolvetica' ;
-  src: url('./assets/fonts/coolveticaRg-Regular.woff2') format('woff2');
-}
+  @font-face {
+    font-family: 'La Belle Aurore';
+    src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
+  }
+  
 
 input,
 textarea{
